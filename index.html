@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='uft=8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--link rel="stylesheet" type="text/css" href="assets/css/reset.css"-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Link to the jQuery library -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/javascript/game.js"></script>
+	<title>CrystalsCollectorGame</title>
+</head>
+
+<body>
+	<header>
+		<h1 id = "name">Crystal Collector Game</h1>
+	</header>
+
+	<div class="container">
+
+		<!--Game instructions-->
+		<div class = "instructions">
+			<p> At the start of each game a number is created.</p>
+			<p> You must click on a combination of the four magical crystals to try matching the random number.</p>
+			<p> Each crystal has a hidden number.</p>
+			<p> Good luck mining for the right combination!</p>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<!--Generate random number-->
+				<div class="random">
+        			<div class="random_header">
+          				<h2 class="title">Random Number</h2>
+          			</div>
+        			<div class="random_display">
+         				 <h1 id="number"></h1>
+         			</div>
+      			</div>
+			</div>
+
+			<div class="col-md-4">
+				<!--Log wins and losses-->
+				<div class = "outcome">
+					<h2> Wins <span id="wins"></span> </h2>
+					<h2> Losses <span id="losses"></span> </h2>	
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<!--Player's score-->
+				<div class = "score">
+					<h2> Crystal Power Level <span class = 'math'></span> </h2>
+				</div>
+			</div>
+		</div>
+
+	<br>
+	<br>
+	
+		<!--Buttons with images of magical power crystals-->
+		<div class="row2">
+			<div class="button-heading">
+				<h1> Choose Your Crystals </h1>
+			</div>
+
+			<div class="magic-gems">
+				<!-- Crystal buttons -->
+				<div class="buttons">	
+					<button id="red"><img src="assets/images/redCrystal.png" alt="red crystal"></button>
+					<button id="yellow"><img src="assets/images/yellowCrystal.png" value="10" alt="yellow crystal"></button>
+					<button id="green"><img src="assets/images/greenCrystal.png" value="15" alt="green crystal"></button>
+					<button id="blue"><img src="assets/images/blueCrystal.png" value="20" alt="blue crystal"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<script type="text/javascript">
+</script>	
+
+</body>
+</html>
